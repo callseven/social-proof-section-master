@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background: url(images/bg-pattern-bottom-desktop.svg) right bottom no-repeat, url(images/bg-pattern-top-desktop.svg) left top no-repeat ;
+    background-size: 500px 400px;
+    margin:auto;
+    font-size: 15px; 
+    width: 520px;
+    height: 100%;
+    place-items: center;
+}
+
+/* .header, */
+main{
+    margin-top: 30px;
+    padding: 20px;
+    width: 520px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    color: var(--VeryDarkMagenta);
+    text-align: center;
+    /* background-color: tan; */
+}
+main h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--very-light-gray);
+}
+main p {
+    color: var(--DarkGrayishMagenta);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 35px;
+}
+.tittle {
+    background-color: var(--brightOrange);
+    width: 440px;
+    height: 370px;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin: 20px auto;
+}
+.stars {
+    width: 440px;
+}
+.star{
+    padding: 15px;
+}
+.stars p {
+    color: var(--VeryDarkMagenta);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+.star  > img {
+  width: 22px;
+  margin-left: 5px;
+}
+.rate{
+    width: 420px;
+    background-color: var(--LightGrayishMagenta);
+    padding: 10px;
+    margin: 10px 30px 20px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 18px;
+    /* top: 20px; */
+}
+.comments{
+    /* background-color: var(--SoftPink); */
+    width: 420px;
+    /* padding: 10px; */
+    /* border-radius: 0 0 10px 10px; */
+    margin: 60px auto 30px;
+    border-radius: 10px;
+}
+.user{
+    width: 420px;
+    background-color: var(--VeryDarkMagenta);
+    padding: 20px 40px 0 40px;
+    margin: 20px auto;
+    height: 320px;
+    border-radius: 10px;
+    font-size: 18px;
+    top: 10px;
+    color: var(--White);
+    text-align: left;
+}
+/* .avatar { */
+  /* width: 10rem; */
+  /* margin: 5.5rem auto 0; */
+  /* position: relative; */
+/* } */
+
+/* .avatar span {
+  position: absolute;
+  top:65px;
+  z-index: 1;
+} */
+
+.avatar > img {
+  width: 50px;
+  height: 70px;
+  object-fit: cover;
+  clip-path: circle(50%);
+  float: left;
+  margin-right:30px ;
+  margin-top: 20px;
+} 
+.name{
+    margin-left: 60px;
+    margin-top: 30px;
+    /* font-weight: 300; */
+}
+.verify{
+    color: var(--SoftPink);
+    font-weight: 100;
+    padding-top: 6px;
+    font-weight: 100;
+}
+.text{
+    color: var(--White);
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+footer{
+    margin:auto;
+    width: 350px;
+    font-size: 12px;
+    font-family: 'Spartan', sans-serif;
+    color: var(--DarkGrayishMagenta);
+    padding-bottom: 20px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+footer a:hover{
+    color: var(--VeryDarkMagenta);
+}
+footer a {
+    text-decoration: none;
+}
+
+
+/* DESKTOP */
+    @media (min-width: 960px) { */
+    body{
+    background: url(images/bg-pattern-bottom-desktop.svg) right bottom no-repeat, url(images/bg-pattern-top-desktop.svg) left top no-repeat ;
+    background-size: 500px 400px;
+    margin:auto;
+    font-size: 15px; 
+    width: 100%;
+    height: 100%;
+    /* place-items: center; */
+}
+
+    .header,
+    main{
+        margin-top: 60px;
+        margin-left: -350px;
+        padding: 10px;
+        width: 490px;
+        height: 340px;
+        font-family: 'Spartan', sans-serif;
+        font-weight: 700;
+        color: var(--VeryDarkMagenta);
+        text-align: left;
+        display: flex;
+        position: absolute;
+        /* background-color: tan; */
+    }
+    main h1{
+        font-size: 45px;
+        font-weight: 700;
+        color: var(--very-light-gray);
+    }
+    main p {
+        color: var(--DarkGrayishMagenta);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 25px;
+        margin-top: -20px;
+    }
+    .tittle {
+        background-color: var(--brightOrange);
+        width: 530px;
+        height: 300px;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+        margin: 10px auto;
+    }
+    .stars {
+        width: 530px;
+        height: 50px;
+        margin-left: 550px;
+        margin-top: 60px;
+        position: absolute;;        
+    }
+    .stars > :nth-child(-2n+2) {
+        margin-left: 70px;
+    }
+    .stars > :nth-child(-3n+3) {
+        margin-left: 120px;
+    }
+
+    .star{
+        padding: 7px 19px;        
+    }
+    .stars p {
+        color: var(--VeryDarkMagenta);
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: -30px;
+        margin-left: 180px;
+        display: flex;
+        position: absolute;
+    }
+    .star  > img {
+    width: 18px;
+    margin-left: 3px;
+    }
+    .rate{
+        width: 450px;
+        height: 55px;
+        background-color: var(--LightGrayishMagenta);
+        padding: 10px 10px ;
+        margin: 0px 20px 20px 20px;
+        border-radius: 8px;
+        font-size: 18px;
+    }
+    
+    .comments{
+        width: 1140px;
+        margin: 340px 0px 0px 0px;
+        border-radius: 8px;
+        display: flex;
+        position: absolute;
+    }
+    .user{
+        width: 450px;
+        height: 230px;
+        background-color: var(--VeryDarkMagenta);
+        margin: 20px 15px;
+        padding: 20px 30px;
+        border-radius: 8px;
+        font-size: 14px;
+        color: var(--White);
+        text-align: left;
+    }
+    .comments > :nth-child(-2n+2) {
+        margin-top: 40px;
+    }
+    .comments > :nth-child(-3n+3) {
+        margin-top: 60px;
+    }
+    
+    .avatar > img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        clip-path: circle(50%);
+        float: left;
+        margin-right:20px ;
+        margin-top: 20px;
+    } 
+    .name{
+        margin-left: 60px;
+        margin-top: 25px;
+        font-size: 13px;
+    }
+    .verify{
+        color: var(--SoftPink);
+        font-size: 13px;
+        padding-top: 4px;
+    }
+    .text{
+        color: var(--White);
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 26px;
+    }
+
+    footer{
+        margin-top: 760px;
+        width: 450px;
+        font-size: 12px;
+        font-family: 'Spartan', sans-serif;
+        color: var(--DarkGrayishMagenta);
+        padding: 20px;
+        position: absolute;
+    }
+    footer a:hover{
+        color: var(--VeryDarkMagenta);
+    }
+    footer a {
+        text-decoration: none;
+    }
+
+
+}
