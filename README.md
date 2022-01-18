@@ -4,7 +4,9 @@ link> https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hu
 
 Minha solução:
 
-![Desktop](https://user-images.githubusercontent.com/7409421/149431795-9b4d145a-d752-4a37-a11c-ccb3644e4d5d.png)
+![Desktop](https://user-images.githubusercontent.com/7409421/149859877-20e5ee9f-dfea-431e-8c4f-ce1592fe4565.png)
+
+![Mobile](https://user-images.githubusercontent.com/7409421/149860314-c5893306-17be-4562-971e-9a9dd4b90925.png)
 
 
 ## Bem-vindo! - Welcome! 👋
